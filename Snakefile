@@ -5,32 +5,6 @@ configfile: "config/data.yaml"
 configfile: "config/plots.yaml"
 configfile: "config/paper.yaml"
 
-
-subsets_paper = [
-    "global2s", #reruning global0b
-    "eumedi0sb", #running eumedi4, eumedi2
-    "easia1s", #waiting for easiacer20b
-
-    "africa1s", #waiting for 0b/0c
-    "seasia3s", #waiting for seasia0c
-
-    "casia0sd", #completely done
-    "southafrica1s" #completely done
-]
-subsets0 = ['africa0', 
-    'medi0',
-    'europe0', 
-    'centralasia0',
-    'eastasia0',
-    'seasia0',
-    'southafrica2',
-    'india0'
-#    'southafrica0'
-#    "ncasia0",
-#    "northasia0",
-#    "ncasia0",
-]
-
 subsets = config['paper']
 subsets_names = [k for k,v in subsets.items()]
 subsets_abbrev = [v['abbrev'] for k,v in subsets.items()]
@@ -38,22 +12,6 @@ subsets_paper = [v['main'] for k,v in subsets.items()]
 subsets0 = [v['full'] if v['full'] else v['main'] for k,v in subsets.items()]
 
 excluded_sets = [
-'centralasia3pccer11',
-'centralasia5pccer11',
-"easia1",
-"easiacer11",
-"seasia4c",
-"africa5pc1",
-"africa5pc2",
-"eumedi0",
-
-#currently running
-"global3",
-"eumedi3",
-"northafrica0b",
-"northafrica0c",
-"eumedi2",
-"seasia0c"
 ]
 
 #subsets_paper.extend(subsets0)

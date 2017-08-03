@@ -1,0 +1,33 @@
+paper:
+    Global :
+        main : "global0fg"
+        full : false
+        abbrev : G
+    "Western Eurasia" :
+        main : "eumedi1fP"
+        full : false
+        abbrev : EUR
+    "Eastern Eurasia" :
+        main : "xasia1fP"
+        full : false
+        abbrev : ASI
+    "South-East Asia" :
+        main : "seasia0fcP"
+        full : false
+        abbrev : SEA
+    "Southern Africa" :
+        main : "southafrica0hgP"
+        full : false
+        abbrev : SAHG
+    India :
+        main : "india1fP"
+        full : false
+        abbrev : I
+    IndiaVar :
+        main : "india0fP"
+        full : false
+        abbrev : I2
+    "Africa" :
+        main : "africa0fbP"
+        full : false
+        abbrev : AFR

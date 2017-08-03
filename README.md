@@ -25,3 +25,12 @@ data format, with some minor (recommended) changes.
 The pipeline is implemented using [Snakemake](https://bitbucket.org/snakemake),
 using `python` for most data wrangling and `R` for most plotting
 
+## Status
+This is a draft intended at showcasing the intended structure of the project.
+This is **NOT** a working version (as the version I use handles sensitive data,
+I cannot just push it to github).
+
+However, the relevant bit is the following:
+the folder `sfiles/` contains rules for specific tools. `sfiles/pca.snake`, for
+example, controlls input formatting, managing options, running and plotting
+for PCA plots, `sfiles/eems.snake` does the same for EEMS.

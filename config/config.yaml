@@ -1,0 +1,18 @@
+DATA:
+  genotypes:
+  - /home/bpeter/n/meta/merged/tib_prune0.6
+  - /home/bpeter/n/meta/merged/tq_prune0.6
+  map: /home/bpeter/n/data/maps/ne_50m_admin_0_map_subunits.shp
+  meta: /home/bpeter/n/meta/meta/pgs/gvar3
+EXE:
+  R: /home/bpeter/.conda/envs/all2/bin/Rscript
+  admixture: /home/bpeter/programs/admixture
+  bed2diffs1: /home/bpeter/programs/bed2diffs_v1
+  bed2diffs2: /home/bpeter/programs/bed2diffs_v2
+  eems: /home/bpeter/programs/eems
+  eems0: /home/bpeter/programs/eems0
+  flashpca: /home/bpeter/programs/flashpca
+  plink: /home/bpeter/programs/plink
+  tess: /home/bpeter/TESS3/build/TESS3
+  treemix: /home/bpeter/programs/treemix
+

@@ -1,0 +1,133 @@
+_default:
+  cpus-per-task: '1'
+  err: autosnake/autosnake-%j-%N.err
+  mem: 2G
+  output: autosnake/autosnake-%j-%N.out
+  time: '2:00:00'
+bed2diffs:
+  err: autosnake/b2d-%j-%N.err
+  mem: 8G
+  output: autosnake/b2d-%j-%N.out
+fst:
+  mem: 32G
+  time: '4:00:00'
+get_pca_outliers:
+  err: autosnake/pcaoutliers-%j-%N.err
+  mem: 4G
+  output: autosnake/pcaoutliers-%j-%N.out
+get_pop_frq:
+  cpus-per-task: '1'
+  err: autosnake/frq-%j-%N.err
+  mem: 8G
+  output: autosnake/frq-%j-%N.out
+  time: '10:15:00'
+make_coord:
+  err: autosnake/coord-%j-%N.err
+  mem: 1G
+  output: autosnake/coord-%j-%N.out
+  time: 00:15:00
+make_ini_file:
+  err: autosnake/ini-%j-%N.err
+  mem: 2G
+  output: autosnake/ini-%j-%N.out
+make_loadings_plots:
+  err: autosnake/loadings-%j-%N.err
+  mem: 16G
+  output: autosnake/loadings-%j-%N.out
+  time: '4:00:00'
+merge_plink:
+  cpus-per-task: '1'
+  err: autosnake/merge-plink-%j-%N.err
+  mem: 64G
+  output: autosnake/merge-plink-%j-%N.out
+  time: '48:00:00'
+paint:
+  cpus-per-task: '1'
+  err: autosnake/paint-%j-%N.err
+  mem: 32G
+  output: autosnake/paint-%j-%N.out
+  time: '96:15:00'
+plink_panel:
+  err: autosnake/plink-%j-%N.err
+  mem: 16G
+  output: autosnake/plink-%j-%N.out
+  time: '3:20:00'
+plot_eems:
+  mem: 6G
+run_eems0_single_pilot_run:
+  err: autosnake/eemspilot0-%j-%N.err
+  mem: 2G
+  output: autosnake/eemspilot0-%j-%N.out
+  time: '3:00:00'
+run_eems0_single_run:
+  err: autosnake/eems0-%j-%N.err
+  mem: 2G
+  output: autosnake/eems0-%j-%N.out
+  time: '3:00:00'
+run_eems_single_pilot_run:
+  err: autosnake/eemspilot-%j-%N.err
+  mem: 2G
+  output: autosnake/eemspilot-%j-%N.out
+  time: '88:59:00'
+run_eems_single_run:
+  err: autosnake/eems-%j-%N.err
+  mem: 2G
+  output: autosnake/eems-%j-%N.out
+  time: '88:59:00'
+run_flashpca:
+  cpus-per-task: '4'
+  err: autosnake/flashpca-%j-%N.err
+  mem: 12G
+  output: autosnake/flashpca-%j-%N.out
+  time: '2:20:00'
+run_flashpca_outliers:
+  cpus-per-task: '4'
+  err: autosnake/flashpca-out-%j-%N.err
+  mem: 12G
+  output: autosnake/flashpca-out-%j-%N.out
+  time: '2:20:00'
+run_spacemix:
+  err: autosnake/spacemix-%j-%N.err
+  mem: 6G
+  output: autosnake/spacemix-%j-%N.out
+run_tess_single:
+  err: autosnake/tess-%j-%N.err
+  mem: 20G
+  output: autosnake/tess-%j-%N.out
+  time: '35:59:00'
+run_trace:
+  cpus-per-task: '1'
+  err: autosnake/trace-%j-%N.err
+  mem: 1G
+  output: autosnake/trace-%j-%N.out
+  time: '24:15:00'
+run_treemix_single:
+  err: autosnake/treemix-%j-%N.err
+  mem: 8G
+  output: autosnake/treemix-%j-%N.out
+  time: '24:00:00'
+subset_nopca:
+  err: autosnake/subset-%j-%N.err
+  mem: 8G
+  output: autosnake/subset-%j-%N.out
+subset_pca:
+  err: autosnake/subset-%j-%N.err
+  mem: 8G
+  output: autosnake/subset-%j-%N.out
+terastructure:
+  cpus-per-task: '8'
+  err: autosnaketera/terastructure-%j-%N.err
+  mem: 24G
+  output: autosnaketera/terastructure-%j-%N.out
+  time: '96:20:00'
+thin_merged:
+  cpus-per-task: '1'
+  err: autosnake/autosnake-%j-%N.err
+  mem: 33G
+  output: autosnake/autosnake-%j-%N.out
+  time: '10:15:00'
+to_tess:
+  mem: 6G
+treemix_input:
+  mem: 16G
+

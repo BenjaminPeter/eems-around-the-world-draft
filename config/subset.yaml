@@ -1,0 +1,43 @@
+subset:
+    __default__:
+        add_pop: []
+        exclude_source:
+          - HUGO
+        extrema: false
+        filter: []
+        hull: true
+        max_missing: 0.01
+        max_missing_ind: 1.0
+        max_per_pop: 5000
+        min_area: 0.3
+        min_sample_size: 1
+        region_buffer: 3.0
+        sample_buffer: 3.0
+        source_file: 0
+    eumedi0f:
+        source_file: 1
+        region:
+          - Europe
+          - israel
+          - western asia
+          - middle east & north africa
+        exclude_pop: [600, 791, 107, 
+            109, 115, 130, 472, 95, 102,
+            103, 113, 108, 106, 114, 93]
+        extrema: [-40, 75, 30, 90]
+        filter:
+          - clean
+        hull: true
+        max_missing: 0.01
+        max_missing_ind: 0.05
+        max_per_pop: 50
+        region_buffer: 1.0
+        sample_buffer: 2.0
+    eumedi1f:                          
+        subsets: eumedi0f              
+        modify_parent:                
+            exclude_pop: [268, 418]   
+            exclude_samples:          
+              - EstoniansH1           
+              - Estonians335e         
+
