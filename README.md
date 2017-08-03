@@ -7,18 +7,21 @@ allow easy comparison between methods and approaches. The original reason
 was to compare EEMS with other methods.
 
 The ultimate goal is to be able to use a comand of the form
-```snakemake figures/pca/2d/europe0_pc1.png
+```bash
+snakemake figures/pca/2d/europe0_pc1.png
 ```
 
 to *automatically and reproducibly* create a figure of a 2D-pca plot 
 for a subset of the data
 called "europe0", with sensible choices for display; the command
-```snakemake all_subsets_pca
+```bash
+snakemake all_subsets_pca
 ```
 to generate pca-plots for all defined subsets of the data,
 and e.g.
 
-```snakemake figures/pca/2d/poster/europe0_pc1.png
+```bash
+snakemake figures/pca/2d/poster/europe0_pc1.png
 ```
 to automatically generate a version appropriate for a poster.
 
